@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .hero {
+            background-color: #007bff;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            color: #007bff;
+            font-weight: 600;
+        }
+
+        .profile-pic {
+            border-radius: 50%;
+            border: 8px solid #007bff;
+            margin-bottom: 20px;
+        }
+
+        .skill-bar {
+            background-color: #e9ecef;
+            border-radius: 25px;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+
+        .skill-level {
+            height: 20px;
+            border-radius: 25px;
+            text-align: center;
+            color: white;
+            padding: 0 10px;
+            line-height: 20px;
+            font-size: 0.9rem;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            top: 0.5rem;
+            left: calc(50% - 5px);
+            width: 10px;
+            height: 10px;
+            background-color: #007bff;
+            border-radius: 50%;
+        }
+
+        .testimonial-card img {
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            width: 80px;
+            height: 80px;
+            margin-top: 2%;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero d-flex flex-column justify-content-center align-items-center text-center">
+        <div class="container">
+            <h1 class="display-4">Welcome to My Portfolio</h1>
+            <p class="lead">Creative Designer & Developer</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-center">
+                    <img src="./people2.jpg" alt="Profile Picture" class="profile-pic img-fluid">
+                </div>
+                <div class="col-lg-8">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam beatae pariatur est cumque nulla velit, animi fuga quibusdam atque iusto quis eveniet dolores sint illo ipsum, nostrum itaque minus. Magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed placeat facilis, ullam aliquam consequuntur ducimus iste accusamus tenetur quas soluta.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills py-5">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <h5>HTML </h5>
+                    <div class="progress skill-bar">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <h5>CSS</h5>
+                    <div class="progress skill-bar">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <h5>JavaScript</h5>
+                    <div class="progress skill-bar">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <h5>UI/UX Design</h5>
+                    <div class="progress skill-bar">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Senior Developer</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">2019 - Present</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, placeat!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">UI/UX Designer</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">2017 - 2019</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, placeat!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Freelance Web Developer</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">2015 - 2017</h6>
+                            <p class="card-text">Worked on a variety of web development projects for clients across different industries, building custom websites and applications.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials py-5">
+        <div class="container">
+            <h2 class="section-title">Testimonials</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card testimonial-card">
+                        <img src="./logo2.png" alt="Client 1" class="img-fluid mx-auto d-block">
+                        <div class="card-body">
+                            <p class="card-text">"Incredible work! The project was delivered on time and exceeded expectations. Highly recommend!"</p>
+                            <h6 class="card-subtitle text-muted">- Client 1</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card testimonial-card">
+                        <img src="./logo3.png" alt="Client 2" class="img-fluid mx-auto d-block">
+                        <div class="card-body">
+                            <p class="card-text">"Professional and creative. The designs were beautiful and functional. Would definitely work together again!"</p>
+                            <h6 class="card-subtitle text-muted">- Client 2</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card testimonial-card">
+                        <img src="./logo5.png" alt="Client 3" class="img-fluid mx-auto d-block">
+                        <div class="card-body">
+                            <p class="card-text">"Great experience from start to finish. The end product was exactly what we were looking for."</p>
+                            <h6 class="card-subtitle text-muted">- Client 3</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Latest Articles</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Understanding Flexbox</h5>
+                            <p class="card-text">Flexbox is a powerful layout tool in CSS. Learn how to use it effectively in your projects.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Mastering Bootstrap 5</h5>
+                            <p class="card-text">Bootstrap 5 is here. Discover the new features and how to use them in your designs.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Responsive Web Design</h5>
+                            <p class="card-text">Learn the principles of responsive design and how to apply them to your websites.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 My Portfolio. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
